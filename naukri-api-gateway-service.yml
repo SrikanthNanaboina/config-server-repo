@@ -10,6 +10,12 @@ spring:
             - Path=/api-employee/**
           filters:
             - StripPrefix=1
+        - id: naukri-api
+          uri: http://localhost:8081
+          predicates:
+            - Path=/api/**
+          filters:
+            - StripPrefix=1
         
 
 server:
